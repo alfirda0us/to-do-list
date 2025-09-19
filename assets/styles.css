@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'matter';
+  src: url('src/font/Matter-Bold.otf') format('opentype'),
+       url('src/font/Matter-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'matter';
+  src: url('src/font/Matter-Heavy.otf') format('opentype'),
+       url('src/font/Matter-HeavyItalic.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'matter';
+  src: url('src/font/Matter-Light.otf') format('opentype'),
+       url('src/font/Matter-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'matter';
+  src: url('src/font/Matter-Medium.otf') format('opentype'),
+       url('src/font/Matter-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'matter';
+  src: url('src/font/Matter-Regular.otf') format('opentype'),
+       url('src/font/Matter-RegularItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'matter';
+  src: 
+       url('src/font/Matter-SemiBold.otf') format('opentype'),
+       url('src/font/Matter-SemiBoldItalic.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'matter', Arial, sans-serif;
+    background: #111111;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    color: white;
+    min-width: 600px;
+    padding: 20px;
+    background: #151515;
+    border-radius: 8px;
+    border: solid 1px #232323;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h1 {
+    font-weight: 300;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 20px;
+}
+
+#taskInput {
+    color: white;
+    width: 70%;
+    padding: 10px;
+    background-color: #151515;
+    border: 1px solid #232323;
+    border-radius: 4px;
+}
+
+#taskInput:focus {
+    outline: none;
+}
+
+#addBtn {
+  width: 22.5%;
+    padding: 10px 15px;
+    border: solid 1px #232323;
+    background-color: #111111;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: #111111;
+    border: solid 1px #232323;
+    padding: 12px 14px;
+    margin-block: 4px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+li:hover {
+    font-size: 0.8;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: gray;
+    background: #1a1a1a;
+}
+
+button.deleteBtn {
+    background-color: #111111;
+    border: none;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* button.deleteBtn:hover {
+    background-color: #ff1a1a;
+} */
